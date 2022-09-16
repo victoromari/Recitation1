@@ -21,7 +21,6 @@ def encrypt(message, password):
         encrypted_message += encrypted_ch
     return encrypted_message
 
-
 def decrypt(message, password):
     decrypted_message = ''
     password = math.ceil(len(message) / len(password)) * password
@@ -33,4 +32,3 @@ def decrypt(message, password):
         decrypted_ch = alphabet[shifted_ord_of_ch]
         decrypted_message += decrypted_ch
     return decrypted_message
-
